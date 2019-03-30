@@ -2,7 +2,7 @@ const XPX_NETWORK = 'mainnet';
 const XPX_NODE_FOLDER = '/home/bitnow/xpx-core';
 const XPX_SNAPSHOT_SOURCE = '/home/bitnow/.xpx/snapshots';
 const XPX_SNAPSHOT_DESTINATION = '/opt/nginx/snapshot.ripaex.io';
-const DELETE_OLDER_THAN_SECONDS = 600;
+const DELETE_OLDER_THAN_SECONDS = 600; //2 days 172800, 1 day 86400
 const EXECUTE_EVERY_SECONDS = 300;
 
 module.exports = {
