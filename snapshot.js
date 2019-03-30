@@ -121,7 +121,7 @@ function createSnapshot() {
                 var moveCommand = 'mv ' + lastSnapshot.name + '.tar.gz ' + constants.XPX_SNAPSHOT_DESTINATION + '/' + lastSnapshot.name + '.tar.gz';
                 execSync(moveCommand, zipCommandOptions);
             }
-            logger.info('End');
+            logger.info('End snapshot creation');
         }
     );
 }
