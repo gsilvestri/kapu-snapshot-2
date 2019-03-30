@@ -1,0 +1,13 @@
+const XPX_NETWORK = 'mainnet';
+const XPX_NODE_FOLDER = '/home/bitnow/xpx-core';
+const XPX_SNAPSHOT_SOURCE = '/home/bitnow/.xpx/snapshots';
+const XPX_SNAPSHOT_DESTINATION = '/opt/nginx/snapshot.ripaex.io';
+const DELETE_OLDER_THAN_SECONDS = 600;
+
+module.exports = {
+    XPX_NETWORK: XPX_NETWORK,
+    XPX_NODE_FOLDER: XPX_NODE_FOLDER,
+    XPX_SNAPSHOT_SOURCE: XPX_SNAPSHOT_SOURCE,
+    XPX_SNAPSHOT_DESTINATION: XPX_SNAPSHOT_DESTINATION,
+    DELETE_OLDER_THAN_SECONDS: DELETE_OLDER_THAN_SECONDS
+};

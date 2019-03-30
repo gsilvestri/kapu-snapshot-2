@@ -1,0 +1,33 @@
+{
+  "name": "ripa-snapshots",
+  "version": "1.0.0",
+  "description": "RIPA Snapshot creation",
+  "main": "snapshot.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "find-remove": "^1.2.2",
+    "readdirp": "^2.2.1",
+    "winston": "^3.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node snapshot.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RipaEx/ripa-snapshot-2.git"
+  },
+  "keywords": [
+    "ripa-snapshot",
+    "sharing"
+  ],
+  "author": "Giovanni Silvestri <gsit80@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RipaEx/ripa-snapshot-2/issues"
+  },
+  "homepage": "https://github.com/RipaEx/ripa-snapshot-2#readme"
+}

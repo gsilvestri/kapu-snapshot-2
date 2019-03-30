@@ -1,0 +1,31 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+lerna-debug.log
+
+# vscode
+.vscode
+
+# Dependency directories
+node_modules
+jspm_packages
+
+# Generated doc directory
+doc
+docs
+
+# Optional npm cache directory
+.npm
+
+# Mac OS X local settings
+.DS_Store
+.tags
+bundle.min.js
+
+# Build
+dist
+packages/**/dist/
+
+# Microsoft Visual Studio settings
+.vs
