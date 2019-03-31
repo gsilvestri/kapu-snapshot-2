@@ -1,2 +1,2 @@
-# ripa-snapshot
-XPX 2.0 snapshot creation script
+# kapu-snapshot
+KAPU 2.0 snapshot creation script

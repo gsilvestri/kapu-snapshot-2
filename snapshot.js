@@ -49,25 +49,25 @@ if (process.env.NODE_ENV !== 'production') {
         ),
     }));
 }
-var snapshotCommand = 'yarn create:xpx:mainnet';
+var snapshotCommand = 'yarn create:kapu:mainnet';
 var snapshotCommandOptions = {
-    cwd: constants.XPX_NODE_FOLDER + '/packages/core-snapshots-cli',
+    cwd: constants.KAPU_NODE_FOLDER + '/packages/core-snapshots-cli',
     stdio: 'inherit'
 };
 
 function createSnapshot() {
 
     logger.info('Removing snapshots older than ' + constants.DELETE_OLDER_THAN_SECONDS + ' seconds');
-    findRemoveSync(constants.XPX_SNAPSHOT_SOURCE + '/' + constants.XPX_NETWORK + '/', {
+    findRemoveSync(constants.KAPU_SNAPSHOT_SOURCE + '/' + constants.KAPU_NETWORK + '/', {
         dir: '*',
         file: '*.*',
         age: {
             seconds: constants.DELETE_OLDER_THAN_SECONDS
         }
     });
-    var deleteCommand = 'find ' + constants.XPX_SNAPSHOT_DESTINATION + ' -name \"*\" -type f -mmin +' + constants.DELETE_OLDER_THAN_SECONDS / 60 + ' -delete';
+    var deleteCommand = 'find ' + constants.KAPU_SNAPSHOT_DESTINATION + ' -name \"*\" -type f -mmin +' + constants.DELETE_OLDER_THAN_SECONDS / 60 + ' -delete';
     var deleteCommandOptions = {
-        cwd: constants.XPX_SNAPSHOT_DESTINATION,
+        cwd: constants.KAPU_SNAPSHOT_DESTINATION,
         stdio: 'inherit'
     };
     execSync(deleteCommand, deleteCommandOptions);
@@ -78,7 +78,7 @@ function createSnapshot() {
     logger.info('Zip snapshot and copy to destination folder');
 
     var settings = {
-        root: constants.XPX_SNAPSHOT_SOURCE + '/' + constants.XPX_NETWORK + '/',
+        root: constants.KAPU_SNAPSHOT_SOURCE + '/' + constants.KAPU_NETWORK + '/',
         depth: 1,
         entryType: 'directories'
     };
@@ -118,7 +118,7 @@ function createSnapshot() {
                     stdio: 'inherit'
                 };
                 execSync(zipCommand, zipCommandOptions);
-                var moveCommand = 'mv ' + lastSnapshot.name + '.tar.gz ' + constants.XPX_SNAPSHOT_DESTINATION + '/' + lastSnapshot.name + '.tar.gz';
+                var moveCommand = 'mv ' + lastSnapshot.name + '.tar.gz ' + constants.KAPU_SNAPSHOT_DESTINATION + '/' + lastSnapshot.name + '.tar.gz';
                 execSync(moveCommand, zipCommandOptions);
             }
             logger.info('End snapshot creation');

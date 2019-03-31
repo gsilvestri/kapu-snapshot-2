@@ -1,7 +1,7 @@
 {
-  "name": "ripa-snapshots",
+  "name": "kapu-snapshots",
   "version": "1.0.0",
-  "description": "RIPA Snapshot creation",
+  "description": "kapu Snapshot creation",
   "main": "snapshot.js",
   "directories": {
     "doc": "docs"
@@ -18,16 +18,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RipaEx/ripa-snapshot-2.git"
+    "url": "git+https://github.com/gsilvestri/kapu-snapshot-2.git"
   },
   "keywords": [
-    "ripa-snapshot",
+    "kapu-snapshot",
     "sharing"
   ],
   "author": "Giovanni Silvestri <gsit80@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/RipaEx/ripa-snapshot-2/issues"
+    "url": "https://github.com/gsilvestri/kapu-snapshot-2/issues"
   },
-  "homepage": "https://github.com/RipaEx/ripa-snapshot-2#readme"
+  "homepage": "https://github.com/gsilvestri/kapu-snapshot-2#readme"
 }
